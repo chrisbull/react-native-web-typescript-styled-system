@@ -1,0 +1,67 @@
+{
+  "extends": [
+    "tslint:recommended",
+    "tslint-config-standard",
+    "tslint-react",
+    "tslint-react-native",
+    "tslint-config-prettier",
+    "tslint-plugin-emotion",
+    "tslint-plugin-prettier"
+  ],
+  "cliOptions": {
+    "exclude": ["node_modules", "dist", "lib"]
+  },
+  "linterOptions": {
+    "exclude": ["node_modules/**"]
+  },
+  "rules": {
+    "max-line-length": [true, 120],
+    "no-empty": false,
+    "jsx-boolean-value": false,
+    "no-floating-promises": false,
+    "no-console": false,
+    "arrow-parens": true,
+    "no-empty-interface": false,
+    "no-shadowed-variable": false,
+    "arrow-return-shorthand": true,
+    "jsx-no-lambda": false,
+    "member-access": false,
+    "interface-name": false,
+    "member-ordering": [
+      true,
+      {
+        "order": [
+          "static-field",
+          "instance-field",
+          "constructor",
+          "public-instance-method",
+          "protected-instance-method",
+          "private-instance-method"
+        ]
+      }
+    ],
+    "object-literal-sort-keys": false,
+    "only-arrow-functions": [
+      true,
+      "allow-declarations",
+      "allow-named-functions"
+    ],
+    "prettier": [
+      true,
+      {
+        "arrowParens": "always",
+        "bracketSpacing": true,
+        "printWidth": 120,
+        "semi": false,
+        "singleQuote": true,
+        "tabWidth": 2,
+        "trailingComma": "all",
+        "useTabs": false
+      }
+    ],
+    "semicolon": false,
+    "trailing-comma": true,
+    "whitespace": true
+  },
+  "rulesDirectory": ["tslint-plugin-prettier"]
+}
